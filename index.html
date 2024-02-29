@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="box" onclick="toggleOptions('unit1')">
+        <label class="unit">
+            <input type="radio" name="unit" value="1"> 1 unit
+        </label>
+        <span class="off">10% off</span>
+        <span class="price">$10.00USD</span>
+        <div class="options" id="unit1Options">
+            <br>
+            <label class="color">Color
+                <div>
+                    <select>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraColor">
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+            </label>
+            <label class="size">Size
+                <div>
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraSize">
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="box" onclick="toggleOptions('unit2')">
+        <label class="unit">
+            <div class="mostPopular">MOST POPULAR</div>
+            <input type="radio" name="unit" value="2"> 2 units
+        </label>
+        <span class="off">20% off</span>
+        <span class="price">$18.00USD</span>
+        <div class="options" id="unit2Options">
+            <br>
+            <label class="color">Color
+                <div>
+                    <select>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraColor">
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+            </label>
+            <label class="size">Size
+                <div>
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraSize">
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="box" onclick="toggleOptions('unit3')">
+        <label class="unit">
+            <input type="radio" name="unit" value="3"> 3 units
+        </label>
+        <span class="off">30% off</span>
+        <span class="price">$24.00USD</span>
+        <div class="options" id="unit3Options">
+            <br>
+            <label class="color">Color
+                <div>
+                    <select>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraColor">
+                        <option value="yellow">Yellow</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+            </label>
+            <label class="size">Size
+                <div>
+                    <select>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="extraSize">
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                        <option value="xxxl">XXXL</option>
+                    </select>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <div class="freeDeliveryTotal">
+        <div class="freeDelivery">Free Delivery</div>
+        <div class="total">Total: $30.00 USD</div>
+    </div>
+
+    <div>
+        <button class="button">+ Add to Cart</button>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
